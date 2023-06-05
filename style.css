@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bgimg.png);
+}
+
+.bg {
+    width: 300px;
+    height: max-content;
+    background-image: url(img/katakitaAPK.png);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.container {
+    width: 300px;
+    height: max-content;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 15px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid 3px darkslategrey;
+    box-sizing: border-box;
+}
+
+.katakita {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-family: Noto Sans, Arial;
+    font-weight: 800;
+}
+
+#count_el {
+    text-align: center;
+    font-size: 100px;
+    font-family: Chewy, Arial;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.button {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.button #add_btn {
+    width: 120px;
+    height: 30px;
+    background-color: lightsalmon;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    font-family: Noto Sans, Arial;
+    font-weight: 700;
+    transition: background-color 0.2s,
+    color 0.2s; 
+}
+
+.button #add_btn:hover {
+    background-color: aliceblue;
+    color: lightsalmon;
+    cursor: pointer;
+}
+
+.button #reset_btn {
+    width: 120px;
+    height: 30px;
+    background-color: lightsalmon;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    font-family: Noto Sans, Arial;
+    font-weight: 700;
+    transition: background-color 0.2s,
+    color 0.2s; 
+}
+
+.button #reset_btn:hover {
+    background-color: aliceblue;
+    color: lightsalmon;
+    cursor: pointer;
+}
