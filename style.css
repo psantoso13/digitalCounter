@@ -87,3 +87,22 @@ body {
     color: lightsalmon;
     cursor: pointer;
 }
+
+.button #newCount_btn {
+    width: 120px;
+    height: 30px;
+    background-color: lightsalmon;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    font-family: Noto Sans, Arial;
+    font-weight: 700;
+    transition: background-color 0.2s,
+    color 0.2s; 
+}
+
+.button #newCount_btn:hover {
+    background-color: aliceblue;
+    color: lightsalmon;
+    cursor: pointer;
+}
