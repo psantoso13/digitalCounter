@@ -18,10 +18,18 @@
         <div class="container">
             <div class="katakita"><img src="img/katakita.png" width="200px"></div>
             <div class="title">digital counter</div>
+
+            <div class="boxIsian">
+                <p id="isianText">Hitungan Saat ini</p>
+                <p id="isian-el">33</p>
+            </div>
+
             <p id="count_el">0</p>
-            <div class="button"><button id="add_btn" onclick="add()">Count</button></div>
-            <div class="button"><button id="reset_btn" onclick="reset()">Reset</button></div>
-            <div class="button"><button id="newCount_btn" onclick="newCount()">Add New Count</button></div>
+            <div class="tombol-atas">
+                <span class="button"><button id="add_btn" onclick="add()">Hitung</button></span>
+                <span class="button"><button id="reset_btn" onclick="reset()">Reset</button></span>
+            </div>
+            <div class="button"><button id="newCount_btn" onclick="newCount()">Ganti Hitungan</button></div>
         </div>
     </div> 
     <script src="script.js"></script>
