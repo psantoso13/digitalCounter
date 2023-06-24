@@ -28,8 +28,7 @@ function add() {
         countEl.innerText = count;
     } else {
         error.play()        
-        alert(`jumlah hitungan sudah ${totalCount} kali`)
-        clearCount()       
+        alert(`jumlah hitungan sudah ${totalCount} kali`)     
     }
 }
 
