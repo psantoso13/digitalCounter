@@ -10,7 +10,6 @@ body {
     background-image: url(img/quranSience.png);
     border-radius: 15px;
     margin: auto;
-    margin-top: 5%;
 }
 
 .container {
@@ -19,8 +18,8 @@ body {
     background-color: rgba(173, 216, 230, 0.2);
     border-radius: 15px;
     margin: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-bottom: 0px;
     border: solid 3px lightskyblue;
     box-sizing: border-box;
 }
