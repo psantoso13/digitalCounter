@@ -12,12 +12,21 @@ function clearCount() {
 }
 
 function addNew() {
-    let newCount = prompt('Masukkan jumlah hitungan:')
-    isianEl.textContent = newCount
-    totalCount = newCount
-}
-    
-
+    let newCount = prompt('Masukkan target hitungan (1-4 digit angka):');
+  
+    if (newCount !== null) {
+      const re = /^\d{1,4}$/;
+      if (re.test(newCount)) {
+        isianEl.textContent = newCount;
+        totalCount = newCount;
+      } else {
+        error.play()
+        alert('Masukkan hanya 1-4 digit angka');
+        addNew();
+      }
+    }
+  }
+      
 function add() {
     if (count < totalCount -3) { 
         count += 1;
