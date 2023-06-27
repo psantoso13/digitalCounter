@@ -17,8 +17,8 @@ function addNew() {
     if (newCount !== null) {
       const re = /^\d{1,4}$/;
       if (re.test(newCount)) {
-        isianEl.textContent = newCount;
-        totalCount = newCount;
+        isianEl.textContent = newCount; // mengganti isian dari Target Hitung
+        totalCount = newCount; // membatasi hitungan sampai newCount
       } else {
         error.play()
         alert('Masukkan hanya 1-4 digit angka');
@@ -37,12 +37,12 @@ function add() {
         countEl.innerText = count;
     } else {
         error.play()        
-        alert(`jumlah hitungan sudah ${totalCount} kali`)     
+        alert(`jumlah hitungan melebihi target. silahkan "reset" atau "ganti target hitungan"`)     
     }
 }
 
 function reset() {
-    let konfirmasi = confirm('Mulai dari awal?')
+    let konfirmasi = confirm('Reset Hitungan?')
 
     if(konfirmasi === true){
     clearCount()
@@ -54,8 +54,12 @@ function newCount() {
     let konfirmasi = confirm('Masukkan jumlah hitungan baru?')
 
     if(konfirmasi === true){
-    clearCount()
+    
     addNew()
+
+    if (countEl.textContent > 0) {
+      reset()
+    } else {}
     // location.reload()
 } else {}
 
