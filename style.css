@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(img/bgimg.png);
+    background-image: linear-gradient(red, snow);
 }
 
 .bg {
@@ -10,6 +10,7 @@ body {
     background-image: url(img/quranSience.png);
     border-radius: 15px;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .container {
@@ -22,7 +23,7 @@ body {
     padding-bottom: 0px;
     border: solid 3px lightskyblue;
     box-sizing: border-box;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .katakita {
