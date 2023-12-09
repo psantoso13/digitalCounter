@@ -20,7 +20,8 @@ function addNew() {
         isianEl.textContent = newCount; // mengganti isian dari Target Hitung
         totalCount = newCount; // membatasi hitungan sampai newCount
       } else {
-        error.play()
+        error.play();
+        navigator.vibrate(800);
         alert('Masukkan hanya 1-4 digit angka');
         addNew();
       }
@@ -30,13 +31,16 @@ function addNew() {
 function add() {
     if (count < totalCount -3) { 
         count += 1;
+        navigator.vibrate(200);
         countEl.innerText = count;
     } else if (count >= totalCount -3 && count < totalCount){
-        notif.play()
+        notif.play();
+        navigator.vibrate(100, 100, 100);
         count += 1;
         countEl.innerText = count;
     } else {
-        error.play()        
+        error.play();
+        navigator.vibrate(800);        
         alert(`jumlah hitungan melebihi target. silahkan "reset" atau "ganti target hitungan"`)     
     }
 }
