@@ -22,7 +22,9 @@ function addNew() {
       } else {
         navigator.vibrate(800);
         error.play();
-        alert('Masukkan hanya 1-4 digit angka');
+        setTimeout(() => {
+          alert('Masukkan hanya 1-4 digit angka');
+        }, 300);
         addNew();
       }
     }
@@ -35,13 +37,15 @@ function add() {
         countEl.innerText = count;
     } else if (count >= totalCount -3 && count < totalCount){
         notif.play();
-        navigator.vibrate([100, 100, 100]);
+        navigator.vibrate([100, 100, 100, 100, 100]);
         count += 1;
         countEl.innerText = count;
     } else {
         navigator.vibrate(800); 
         error.play();       
-        alert(`jumlah hitungan melebihi target. silahkan "reset" atau "ganti target hitungan"`)     
+        setTimeout(() => {
+          alert('jumlah hitungan melebihi target. silahkan "reset" atau "ganti target hitungan"');
+        }, 300);     
     }
 }
 
