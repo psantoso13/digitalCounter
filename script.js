@@ -24,7 +24,7 @@ function addNew() {
         error.play();
         setTimeout(() => {
           alert('Masukkan hanya 1-4 digit angka');
-        }, 300);
+        }, 0);
         addNew();
       }
     }
