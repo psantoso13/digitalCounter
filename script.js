@@ -20,12 +20,9 @@ function addNew() {
         isianEl.textContent = newCount; // mengganti isian dari Target Hitung
         totalCount = newCount; // membatasi hitungan sampai newCount
       } else {
-        navigator.vibrate(800);
-        error.play();
-        setTimeout(() => {
+          error.play();
           alert('Masukkan hanya 1-4 digit angka');
-        }, 0);
-        addNew();
+          addNew();
       }
     }
   }
